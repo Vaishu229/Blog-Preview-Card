@@ -1,0 +1,109 @@
+body{
+    background-color: hsl(47, 88%, 63%);
+	height: 55em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+    background-color: white;
+    height:max-content;
+	width: 26rem;
+    display: flex;
+    flex-direction: column;
+	padding: 1.5em;
+	border-radius: 5%;
+	
+	border: solid rgb(48, 48, 48) 0.1em;
+	box-shadow: 1em 1em black;
+}
+
+.illustration{
+	border-radius: 5%;
+}
+
+.category{
+    background-color: hsl(47, 88%, 63%);
+    display: inline;
+	padding: 0.4em;
+	border-radius: 5%;
+    width:fit-content;
+}
+
+h3, h4, h1, p{
+	font-family: "Roboto", sans-serif;
+  	font-optical-sizing: auto;  	
+	font-style: normal;
+}
+
+h3{
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+h4{
+	font-weight: 350;
+	font-size: 1rem;
+}
+
+h1{
+  	font-weight: 550;
+	cursor: pointer;
+}
+
+h1:hover{
+	color: yellow;
+}
+
+p{
+	font-weight: 280;
+	font-size: 1rem;
+}
+
+.user{
+    margin: 1em;
+	display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 580px) {
+	body{
+		height: 40em;
+	}
+	.container{
+    	width: 18rem;
+		height: fit-content;
+		box-shadow: 0.7em 0.7em black;
+	}
+	h4, h1, p, .user{
+		margin: 0.7em;
+	}
+	h3, h4, p{
+		font-size: 0.8rem;
+	}
+	h1{
+		font-size: 1.3em;
+	}
+	.user img{
+		height: 50px;
+	}
+}
+
+@media (max-width: 375px){
+	body{
+		height: 32em;
+	}
+	.container{
+		width: 15rem;
+	}
+}
+
+@media (max-width: 375px){
+	body{
+		height: 32em;
+	}
+	.container{
+		width: 13rem;
+	}
+}
